@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Business Analysis experience at Hoa Theo Mua: AI Flower Image Generation, AI Greeting Card Creation, and selected Admin Management features.">
+  <title>Hoa Theo Mua</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="i18n.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to case study</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Hoa Theo Mua case study home">
+      <img class="brand-logo" src="assets/images/hoatheomua-logo.png" alt="Hoa Theo Mua" width="1446" height="786"
+        decoding="async">
+    </a>
+    <div class="header-actions">
+      <div class="language-switch" role="group" aria-label="Language / Ngôn ngữ">
+        <button type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-language="vi" lang="vi" aria-pressed="false">VI</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero experience-hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="hero-heading-group">
+          <h1 id="hero-title">Hoa Theo Mua</h1>
+          <dl class="hero-details">
+            <div><dt>Domain</dt><dd>E-commerce &amp; Retail</dd></div>
+            <div><dt>Industry</dt><dd>Floral Retail</dd></div>
+            <div><dt>Project Type</dt><dd>Enterprise / Company Project</dd></div>
+            <div><dt>Role</dt><dd>Business Analyst</dd></div>
+            <div><dt>Scope</dt><dd>AI Flower Image Generation, AI Greeting Card Creation &amp; Admin Management</dd></div>
+            <div><dt>Website</dt><dd><a href="https://hoatheomua.com/" target="_blank" rel="noopener noreferrer">hoatheomua.com <span aria-hidden="true">↗</span></a></dd></div>
+          </dl>
+          <a class="hero-explore" href="#contents">Explore now <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-art hero-botanical" aria-hidden="true">
+        <img src="assets/images/hoatheomua-garden-bouquet.webp" alt="" width="1024" height="1536" decoding="async">
+      </div>
+    </section>
+
+    <div class="case-layout" id="contents" tabindex="-1">
+    <nav class="section-nav toc-sidebar" aria-label="Table of contents" data-open="false">
+      <p class="toc-title">Contents</p>
+      <button class="toc-toggle" type="button" aria-expanded="false" aria-controls="toc-links"><span>Contents</span><span class="toc-toggle-icon" aria-hidden="true">+</span></button>
+      <div class="nav-track" id="toc-links">
+        <a href="#overview" class="active" aria-current="location"><span>01</span>Overview &amp; Role</a>
+        <a href="#problem"><span>02</span>Business Problem</a>
+        <a href="#analysis"><span>03</span>Business Analysis</a>
+        <a href="#requirements"><span>04</span>Requirements &amp; User Stories</a>
+        <a href="#solution"><span>05</span>Solution &amp; Screens</a>
+      </div>
+    </nav>
+
+    <div class="case-content">
+    <section class="case-section wrap" id="overview" data-section="01">
+      <header class="section-heading">
+        <p class="section-number">01</p>
+        <div>
+          <p class="eyebrow">Overview &amp; Role</p>
+        </div>
+      </header>
+      <div class="product-context-gallery">
+        <div class="gallery-intro">
+          <h3>Flowers at the heart of Hoa Theo Mua.</h3>
+          <a href="https://hoatheomua.com/" target="_blank"
+            rel="noopener noreferrer">View the original website <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="context-flower context-flower-rose"><img src="assets/images/hoatheomua-pastel-bouquet.webp"
+            alt="Red and pink bouquet from Hoa Theo Mua" width="880" height="1325" loading="lazy" decoding="async">
+        </figure>
+        <figure class="context-flower context-flower-sage"><img src="assets/images/hoatheomua-bouquet-banner.webp"
+            alt="Orange and cream bouquet from Hoa Theo Mua" width="1076" height="1462" loading="lazy" decoding="async">
+        </figure>
+      </div>
+      <div class="feature-scope-grid" aria-label="My actual BA scope">
+        <article class="feature-card ai-card">
+          <div class="feature-symbol" aria-hidden="true">✦</div>
+          <p class="workstream-tag">Workstream A</p>
+          <h3>AI Flower Image Generation</h3>
+          <p>Help users customize flowers to their preferences and preview the arrangement through AI-generated images.</p>
+        </article>
+        <article class="feature-card ai-card">
+          <div class="feature-symbol" aria-hidden="true">✦</div>
+          <p class="workstream-tag">Workstream B</p>
+          <h3>AI Greeting Card Creation</h3>
+          <p>AI-assisted greeting card creation.</p>
+        </article>
+        <article class="feature-card admin-card">
+          <div class="feature-symbol" aria-hidden="true">⌘</div>
+          <p class="workstream-tag">Workstream C</p>
+          <h3>Admin Management</h3>
+          <p>Analysis of selected admin features, actors, workflows, business rules, dependencies, and access
+            requirements where applicable.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section tinted" id="problem" data-section="02">
+      <div class="wrap">
+        <header class="section-heading">
+          <p class="section-number">02</p>
+          <div>
+            <p class="eyebrow">Business Problem</p>
+          </div>
+        </header>
+        <div class="problem-tabs" role="tablist" aria-label="Business Problem" hidden>
+          <button type="button" role="tab" id="problem-tab-flower" aria-controls="problem-panel-flower" aria-selected="true" tabindex="0">AI Flower Image Generation</button>
+          <button type="button" role="tab" id="problem-tab-card" aria-controls="problem-panel-card" aria-selected="false" tabindex="-1">AI Greeting Card Creation</button>
+          <button type="button" role="tab" id="problem-tab-admin" aria-controls="problem-panel-admin" aria-selected="false" tabindex="-1">Admin Management</button>
+        </div>
+        <div class="problem-panels">
+          <article class="prompt-card ai-border baccm-card" role="tabpanel" id="problem-panel-flower" aria-labelledby="problem-tab-flower" tabindex="0">
+            <p class="workstream-tag">AI Flower Image Generation</p>
+            <dl class="baccm-concepts">
+              <div>
+                <dt>Need</dt>
+                <dd>
+                  <ul>
+                    <li><strong>Problem:</strong> Customers struggle to visualize a customized bouquet and determine which customization options the shop can fulfill.</li>
+                    <li><strong>Opportunity:</strong> Offer bouquet personalization with AI image previews, helping customers select flowers to their preferences within configurations the shop can fulfill.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Change</dt>
+                <dd>
+                  <ul>
+                    <li>Move from an experience primarily focused on selecting existing flower designs to a bouquet customization process based on configured combos and materials, combined with AI image previews.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="baccm-wide">
+                <dt>Solution</dt>
+                <dd>
+                  <ul>
+                    <li>Allow customers to customize bouquets using available combos.</li>
+                    <li>Support size selection, material quantity adjustments within permitted limits, and accessory selection.</li>
+                    <li>Generate illustrative bouquet images with AI.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="baccm-wide">
+                <dt>Stakeholder</dt>
+                <dd class="stakeholder-groups">
+                  <section class="stakeholder-group" aria-labelledby="stakeholders-a-internal">
+                  <h4 id="stakeholders-a-internal">Internal Stakeholders</h4>
+                  <ul>
+                    <li>Business Owner</li>
+                    <li>System Administrator</li>
+                    <li>Shop Staff</li>
+                    <li>Business Analyst</li>
+                    <li>Development Team</li>
+                    <li>QA / Tester</li>
+                  </ul>
+                  </section>
+                  <section class="stakeholder-group" aria-labelledby="stakeholders-a-external">
+                  <h4 id="stakeholders-a-external">External Stakeholders</h4>
+                  <ul>
+                    <li>Customer</li>
+                    <li>Nhanh.vn</li>
+                    <li>Ahamove</li>
+                    <li>Xanh SM</li>
+                    <li>SePay</li>
+                    <li>AI Service Provider</li>
+                  </ul>
+                  </section>
+                </dd>
+              </div>
+              <div>
+                <dt>Value</dt>
+                <dd>
+                  <ul>
+                    <li>Help customers visualize their desired bouquets.</li>
+                    <li>Enhance the personalized online flower shopping experience.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Context</dt>
+                <dd>
+                  <ul>
+                    <li>A floral e-commerce platform.</li>
+                    <li>Customization is influenced by combo configurations, materials, selling prices, and inventory.</li>
+                    <li>AI images have limits on accuracy compared with the actual product.</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+          <article class="prompt-card ai-border baccm-card" role="tabpanel" id="problem-panel-card" aria-labelledby="problem-tab-card" tabindex="0">
+            <p class="workstream-tag">AI Greeting Card Creation</p>
+            <dl class="baccm-concepts">
+              <div>
+                <dt>Need</dt>
+                <dd>
+                  <ul>
+                    <li><strong>Problem:</strong> Customers struggle to visualize the finished card when only selecting a template and entering a greeting, creating a gap between their personalization expectations and the actual product.</li>
+                    <li><strong>Opportunity:</strong> Expand personalized greeting card services, allowing customers to preview designs and helping shops produce cards to order.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Change</dt>
+                <dd>
+                  <ul>
+                    <li>Move from selecting card templates and providing simple greetings to customizing and previewing card designs with AI.</li>
+                    <li>Standardize card production based on the generated design and the finishing method selected by the customer.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="baccm-wide">
+                <dt>Solution</dt>
+                <dd>
+                  <ul>
+                    <li>Allow customers to enter greeting content, select a card template, and choose a finishing method (printed or handwritten).</li>
+                    <li>Use AI to generate a card image based on the selected configuration for customers to preview.</li>
+                    <li>Help shops produce cards from the AI design: print the greeting directly, or print the design without a greeting for staff to write by hand.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="baccm-wide">
+                <dt>Stakeholder</dt>
+                <dd class="stakeholder-groups">
+                  <section class="stakeholder-group" aria-labelledby="stakeholders-b-internal">
+                    <h4 id="stakeholders-b-internal">Internal Stakeholders</h4>
+                    <ul>
+                      <li>Business Owner</li>
+                      <li>Shop Owner / Staff</li>
+                      <li>Business Analyst</li>
+                      <li>Development Team</li>
+                      <li>QA / Tester</li>
+                    </ul>
+                  </section>
+                  <section class="stakeholder-group" aria-labelledby="stakeholders-b-external">
+                    <h4 id="stakeholders-b-external">External Stakeholders</h4>
+                    <ul>
+                      <li>Customer</li>
+                      <li>AI Service Provider</li>
+                      <li>SePay (Payment Service Provider)</li>
+                    </ul>
+                  </section>
+                </dd>
+              </div>
+              <div>
+                <dt>Value</dt>
+                <dd>
+                  <ul>
+                    <li>Help customers visualize the card design more clearly before use.</li>
+                    <li>Help shops produce cards according to the selected design and finishing method.</li>
+                    <li>Enhance personalization and add value to flower gifting services.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Context</dt>
+                <dd>
+                  <ul>
+                    <li>An e-commerce platform in the floral retail industry.</li>
+                    <li>Greeting cards are supplementary products tied to orders.</li>
+                    <li>Card creation and production are influenced by design templates, greeting content, finishing methods (printed or handwritten), payment status, and AI image generation capabilities.</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+          <article class="prompt-card admin-border baccm-card" role="tabpanel" id="problem-panel-admin" aria-labelledby="problem-tab-admin" tabindex="0">
+            <p class="workstream-tag">Admin Management</p>
+            <dl class="baccm-concepts">
+              <div>
+                <dt>Need</dt>
+                <dd>
+                  <ul>
+                    <li><strong>Problem:</strong> Data, business configuration, and action permissions may be managed inconsistently, leading to operational errors.</li>
+                    <li><strong>Opportunity:</strong> Standardize administration, strengthen data control, and clarify responsibilities across user groups.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Change</dt>
+                <dd>
+                  <ul>
+                    <li>Move to structured administration processes in which data and business configuration are managed consistently.</li>
+                    <li>Establish controls over actions based on user roles and permissions.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="baccm-wide">
+                <dt>Solution</dt>
+                <dd>
+                  <ul>
+                    <li>Provide functions for managing data and business configuration.</li>
+                    <li>Validate data, apply business rules, and handle dependencies between functions.</li>
+                    <li>Support access permissions and control administrative actions by role where applicable.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="baccm-wide">
+                <dt>Stakeholder</dt>
+                <dd class="stakeholder-groups">
+                  <section class="stakeholder-group" aria-labelledby="stakeholders-c-internal">
+                    <h4 id="stakeholders-c-internal">Internal Stakeholders</h4>
+                    <ul>
+                      <li>Business Owner</li>
+                      <li>System Administrator</li>
+                      <li>Shop Owner / Staff</li>
+                      <li>Business Analyst</li>
+                      <li>Development Team</li>
+                      <li>QA / Tester</li>
+                    </ul>
+                  </section>
+                </dd>
+              </div>
+              <div>
+                <dt>Value</dt>
+                <dd>
+                  <ul>
+                    <li>Improve the consistency and reliability of business data.</li>
+                    <li>Reduce the risk of errors and help administrative staff operate efficiently.</li>
+                    <li>Strengthen control and management of the business's operational activities.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt>Context</dt>
+                <dd>
+                  <ul>
+                    <li>An e-commerce platform in floral retail with multiple user groups and roles.</li>
+                    <li>Data, configurations, and business rules have dependencies across functions.</li>
+                    <li>Administration is influenced by requirements for data validity, access permissions, and integration with external systems.</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section wrap" id="analysis" data-section="03">
+      <header class="section-heading">
+        <p class="section-number">03</p>
+        <div>
+          <p class="eyebrow">Business Analysis</p>
+        </div>
+      </header>
+      <div class="problem-tabs" role="tablist" aria-label="Business Analysis" hidden>
+        <button type="button" role="tab" id="analysis-tab-flower" aria-controls="analysis-ai" aria-selected="true" tabindex="0">AI Flower Image Generation</button>
+        <button type="button" role="tab" id="analysis-tab-card" aria-controls="analysis-greeting" aria-selected="false" tabindex="-1">AI Greeting Card Creation</button>
+        <button type="button" role="tab" id="analysis-tab-admin" aria-controls="analysis-admin" aria-selected="false" tabindex="-1">Admin Management</button>
+      </div>
+      <article class="workstream-panel ai-panel" id="analysis-ai" role="tabpanel" aria-labelledby="analysis-tab-flower" tabindex="0">
+        <div class="panel-title"><span>A</span>
+          <div>
+            <h3>Workstream A — AI Flower Image Generation</h3>
+          </div>
+        </div>
+
+        <div class="flower-analysis">
+          <section class="flower-analysis-section">
+            <figure class="flower-process">
+              <figcaption><strong>01 / As-Is</strong></figcaption>
+              <a class="flower-diagram-link" href="assets/images/flower-process-as-is-en.png" rel="noopener noreferrer"><img class="flower-diagram" src="assets/images/flower-process-as-is-en.png" data-src-en="assets/images/flower-process-as-is-en.png" data-src-vi="assets/images/flower-process-as-is.png" data-width-en="4808" data-height-en="2632" data-width-vi="4636" data-height-vi="2632" alt="Original As-Is flower ordering process diagram" width="4808" height="2632" loading="lazy" decoding="async"></a>
+            </figure>
+            <figure class="flower-process">
+              <figcaption><strong>02 / To-Be</strong></figcaption>
+              <a class="flower-diagram-link" href="assets/images/flower-process-to-be-en.png" rel="noopener noreferrer"><img class="flower-diagram" src="assets/images/flower-process-to-be-en.png" data-src-en="assets/images/flower-process-to-be-en.png" data-src-vi="assets/images/flower-process-to-be.png" data-width-en="9968" data-height-en="3480" data-width-vi="10124" data-height-vi="3480" alt="Original To-Be AI flower design process diagram" width="9968" height="3480" loading="lazy" decoding="async"></a>
+            </figure>
+          </section>
+          <section class="flower-analysis-section" aria-labelledby="flower-functions-title">
+            <h4 id="flower-functions-title">Key feature groups</h4>
+            <div class="analysis-table-scroll" tabindex="0" role="region" aria-labelledby="flower-functions-title">
+              <table class="flower-table"><thead><tr><th scope="col">Code</th><th scope="col">Functional group and scope</th></tr></thead>
+              <tbody><tr><th scope="row">F01</th><td><strong>Initialize a flower design request</strong><p>Record the original source Combo, select an available Size and configure Combos within shop limits.</p></td></tr><tr><th scope="row">F02</th><td><strong>Generate a flower design with AI</strong><p>Validate inputs, daily quota and running jobs; generate an illustrative image using the configured materials and input priority.</p></td></tr><tr><th scope="row">F03</th><td><strong>View and manage AI results</strong><p>Display generated images and preserve each successful result as a separate history entry.</p></td></tr></tbody></table>
+            </div>
+          </section>
+          <section class="flower-analysis-section" aria-labelledby="flower-rules-title">
+            <h4 id="flower-rules-title">Business rules · 8 rules</h4>
+            <div class="analysis-table-scroll" tabindex="0" role="region" aria-label="Workstream A business rules">
+              <table class="flower-table"><thead><tr><th scope="col">Code</th><th scope="col">Content</th></tr></thead><tbody>
+                <tr id="rule-br-070"><th scope="row">BR-01</th><td><strong>Combo configuration</strong><p>Each request must record the original source Combo and the Combo configuration selected for the Size.</p></td></tr><tr id="rule-br-267"><th scope="row">BR-02</th><td><strong>Size selection</strong><p>Customers must select a valid, available Size.</p></td></tr><tr id="rule-br-268"><th scope="row">BR-03</th><td><strong>Combo configuration by Size</strong><p>Customers may increase the source Combo quantity or combine other Combos within the configurations and limits set by the shop.</p></td></tr><tr id="rule-br-024"><th scope="row">BR-04</th><td><strong>AI input priority</strong><p>Combo configuration by Size → Size → Bouquet style → Mockup → Wrapping paper and ribbon.</p></td></tr><tr id="rule-br-025"><th scope="row">BR-05</th><td><strong>AI image composition</strong><p>AI must use the material components and quantities from the Combo configuration; the generated image is illustrative only.</p></td></tr><tr id="rule-br-021"><th scope="row">BR-06</th><td><strong>Daily AI quota</strong><p>Each customer has a maximum of 3 AI image generations per day. Failed jobs receive a quota refund according to the applicable rule.</p></td></tr><tr id="rule-br-029"><th scope="row">BR-07</th><td><strong>AI job limit</strong><p>Each flower design request may have at most one running AI job at a time.</p></td></tr><tr id="rule-br-031"><th scope="row">BR-08</th><td><strong>AI history retention</strong><p>Each successful generation must be saved as a separate result without overwriting previous history.</p></td></tr>
+              </tbody></table>
+            </div>
+          </section>
+        </div>
+      </article>
+      <article class="workstream-panel ai-panel" id="analysis-greeting" role="tabpanel" aria-labelledby="analysis-tab-card" tabindex="0">
+        <div class="panel-title"><span>B</span><div><h3>Workstream B — AI Greeting Card Creation</h3></div></div>
+        <div class="flower-analysis">
+          <section class="flower-analysis-section">
+            <figure class="flower-process">
+              <figcaption><strong>01 / As-Is</strong></figcaption>
+              <a class="flower-diagram-link" href="assets/images/card-process-as-is-en.png" rel="noopener noreferrer"><img class="flower-diagram" src="assets/images/card-process-as-is-en.png" data-src-en="assets/images/card-process-as-is-en.png" data-src-vi="assets/images/card-process-as-is.png" data-width-en="6000" data-height-en="1006" data-width-vi="6000" data-height-vi="989" alt="Original As-Is greeting card ordering process diagram" width="6000" height="1006" loading="lazy" decoding="async"></a>
+            </figure>
+            <figure class="flower-process">
+              <figcaption><strong>02 / To-Be</strong></figcaption>
+              <a class="flower-diagram-link" href="assets/images/card-process-to-be-en.png" rel="noopener noreferrer"><img class="flower-diagram" src="assets/images/card-process-to-be-en.png" data-src-en="assets/images/card-process-to-be-en.png" data-src-vi="assets/images/card-process-to-be.png" data-width-en="6000" data-height-en="1610" data-width-vi="6000" data-height-vi="1614" alt="Original To-Be AI greeting card creation process diagram" width="6000" height="1610" loading="lazy" decoding="async"></a>
+            </figure>
+          </section>
+          <section class="flower-analysis-section" aria-labelledby="greeting-scope-title">
+            <h4 id="greeting-scope-title">Key feature groups</h4>
+            <div class="analysis-table-scroll" tabindex="0" role="region" aria-labelledby="greeting-scope-title">
+              <table class="flower-table">
+                <thead><tr><th scope="col">Code</th><th scope="col">Functional group and scope</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">F01</th><td><strong>Card configuration at Checkout</strong><p>Select card type, Printed/Handwritten format, Size and Template, enter a greeting, attach an image, and calculate the price</p></td></tr>
+                  <tr><th scope="row">F02</th><td><strong>AI card generation</strong><p>Check payment and quota, generate an image, regenerate, and confirm the card</p></td></tr>
+                  <tr><th scope="row">F03</th><td><strong>Created card management</strong><p>View history and details, download images, and select a card from History for Checkout</p></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="flower-analysis-section" aria-labelledby="greeting-rules-title">
+            <h4 id="greeting-rules-title">Business rules · 8 rules</h4>
+            <div class="analysis-table-scroll" tabindex="0" role="region" aria-labelledby="greeting-rules-title">
+              <table class="flower-table">
+                <thead><tr><th scope="col">Code</th><th scope="col">Content</th></tr></thead>
+                <tbody>
+                  <tr id="rule-br-051"><th scope="row">BR-051</th><td><strong>Greeting content</strong><p>Customers must enter a greeting when selecting a card. The content must meet the applicable word limit.</p></td></tr>
+                  <tr id="rule-br-052"><th scope="row">BR-052</th><td><strong>Attached image</strong><p>Each request may include at most one PNG/JPG image, no larger than 10 MB.</p></td></tr>
+                  <tr id="rule-br-053"><th scope="row">BR-053</th><td><strong>Card quantity</strong><p>Each Checkout may have at most one card selection at a time.</p></td></tr>
+                  <tr id="rule-br-054"><th scope="row">BR-054</th><td><strong>Card pricing</strong><p>Printed card = Size price. Handwritten card = Size price + word-count surcharge.</p></td></tr>
+                  <tr id="rule-br-048"><th scope="row">BR-048</th><td><strong>AI card generation limits</strong><p>A maximum of 10 generations per day per customer and 3 generations per source flower design. Both limits apply simultaneously.</p></td></tr>
+                  <tr id="rule-br-044"><th scope="row">BR-044</th><td><strong>Regeneration conditions</strong><p>Cards may only be regenerated during Custom Card creation after successful payment. Regeneration from History is not allowed.</p></td></tr>
+                  <tr id="rule-br-154"><th scope="row">BR-154</th><td><strong>Card image content</strong><p>Typed cards must display the greeting verbatim. Calligraphy cards are not required to render the greeting on the AI image.</p></td></tr>
+                  <tr id="rule-br-272"><th scope="row">BR-272</th><td><strong>Editing after payment</strong><p>After editing, the greeting must not exceed the word count already paid for.</p></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </article>
+      <article class="workstream-panel admin-panel" id="analysis-admin" role="tabpanel" aria-labelledby="analysis-tab-admin" tabindex="0">
+        <div class="panel-title"><span>C</span>
+          <div>
+            <h3>Workstream C — Admin Management</h3>
+          </div>
+        </div>
+        <div class="flower-analysis">
+          <section class="flower-analysis-section" aria-labelledby="admin-scope-title">
+            <h4 id="admin-scope-title">Key feature groups</h4>
+            <div class="analysis-table-scroll" tabindex="0" role="region" aria-labelledby="admin-scope-title">
+              <table class="flower-table">
+                <thead><tr><th scope="col">Code</th><th scope="col">Functional group and scope</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">A01</th><td><strong>Manage flower mockups</strong><p>STORY-050 → 053</p></td></tr>
+                  <tr><th scope="row">A02</th><td><strong>Manage Custom AI flower size configurations</strong><p>STORY-079 → 083</p></td></tr>
+                  <tr><th scope="row">A03</th><td><strong>Manage flower wrapping style images</strong><p>STORY-074 → 078</p></td></tr>
+                  <tr><th scope="row">A04</th><td><strong>Manage card sizes</strong><p>STORY-054 → 056, 062–063</p></td></tr>
+                  <tr><th scope="row">A05</th><td><strong>Manage Custom AI card templates</strong><p>STORY-057 → 060, 065</p></td></tr>
+                  <tr><th scope="row">A06</th><td><strong>Manage handwritten card surcharges</strong><p>STORY-061, 064, 066–068</p></td></tr>
+                  <tr><th scope="row">A07</th><td><strong>Manage Free AI card templates</strong><p>STORY-069 → 073</p></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </article>
+    </section>
+
+    <section class="case-section requirements-section" id="requirements" data-section="04">
+      <div class="wrap">
+        <header class="section-heading light-heading">
+          <p class="section-number">04</p>
+          <div>
+            <p class="eyebrow">Requirements &amp; User Stories</p>
+          </div>
+        </header>
+        <div class="problem-tabs" role="tablist" aria-label="Requirements &amp; User Stories" hidden>
+          <button type="button" role="tab" id="requirements-tab-ai" aria-controls="ai-requirements" aria-selected="true" tabindex="0">AI Flower Image Generation</button>
+          <button type="button" role="tab" id="requirements-tab-greeting" aria-controls="greeting-requirements" aria-selected="false" tabindex="-1">AI Greeting Card Creation</button>
+          <button type="button" role="tab" id="requirements-tab-admin" aria-controls="admin-requirements" aria-selected="false" tabindex="-1">Admin Management</button>
+        </div>
+        <div id="requirements-root">
+          <div class="requirement-fallback">
+            <h3>AI Flower Image Generation User Stories</h3>
+            <details>
+              <summary>AI-US-___ · To be verified</summary>
+              <p>[Replace with the actual user story and its supporting fields.]</p>
+            </details>
+          </div>
+          <div class="requirement-fallback">
+            <h3>AI Greeting Card Creation User Stories</h3>
+            <details><summary>CARD-US-___ · To be verified</summary><p>[Replace with the actual user story and its supporting fields.]</p></details>
+          </div>
+          <div class="requirement-fallback">
+            <h3>Admin Management User Stories</h3>
+            <details>
+              <summary>ADM-US-___ · To be verified</summary>
+              <p>[Replace with the actual user story and its supporting fields.]</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section wrap" id="solution" data-section="05">
+      <header class="section-heading">
+        <p class="section-number">05</p>
+        <div>
+          <p class="eyebrow">Solution &amp; Screens</p>
+        </div>
+      </header>
+      <div class="problem-tabs" role="tablist" aria-label="Solution &amp; Screens" hidden>
+        <button type="button" role="tab" id="solution-tab-flower" aria-controls="solution-panel-flower" aria-selected="true" tabindex="0">AI Flower Image Generation</button>
+        <button type="button" role="tab" id="solution-tab-card" aria-controls="solution-panel-card" aria-selected="false" tabindex="-1">AI Greeting Card Creation</button>
+      </div>
+      <div class="solution-tab-panel" id="solution-panel-flower" role="tabpanel" aria-labelledby="solution-tab-flower" tabindex="0">
+      <section class="solution-phase" aria-label="Initial wireframes">
+        <figure class="screenshot-card ai-border flower-initial-sketches" id="solution-flower-wireframes">
+          <div class="flower-sketch-grid">
+            <div><h4>01 / Enter information</h4><a class="flower-diagram-link" href="assets/images/flower-sketch-information.png"><img src="assets/images/flower-sketch-information.png" alt="Initial flower design wireframe — information entry" width="2560" height="3248" loading="lazy" decoding="async"></a></div>
+            <div><h4>02 / Select a combo</h4><a class="flower-diagram-link" href="assets/images/flower-sketch-combo.png"><img src="assets/images/flower-sketch-combo.png" alt="Initial flower design wireframe — combo selection" width="3099" height="2954" loading="lazy" decoding="async"></a></div>
+            <div><h4>03 / Select a mockup</h4><a class="flower-diagram-link" href="assets/images/flower-sketch-mockup.png"><img src="assets/images/flower-sketch-mockup.png" alt="Initial flower design wireframe — mockup selection" width="2496" height="4048" loading="lazy" decoding="async"></a></div>
+            <div><h4>04 / Draft details</h4><a class="flower-diagram-link" href="assets/images/flower-sketch-draft.png"><img src="assets/images/flower-sketch-draft.png" alt="Initial flower design wireframe — draft details before generation" width="2560" height="3994" loading="lazy" decoding="async"></a></div>
+            <div><h4>05 / AI results</h4><a class="flower-diagram-link" href="assets/images/flower-sketch-result.png"><img src="assets/images/flower-sketch-result.png" alt="Initial flower design wireframe — AI result screen" width="2580" height="3167" loading="lazy" decoding="async"></a></div>
+          </div>
+        </figure>
+      </section>
+      </div>
+      <div class="solution-tab-panel" id="solution-panel-card" role="tabpanel" aria-labelledby="solution-tab-card" tabindex="0">
+        <section class="solution-phase" aria-label="AI Greeting Card Creation">
+          <figure class="screenshot-card ai-border">
+            <div class="flower-sketch-grid">
+              <div><h4>Checkout before selecting a card</h4><a class="flower-diagram-link" href="assets/images/card-checkout-empty.png"><img src="assets/images/card-checkout-empty.png" alt="Checkout with options to create a card or choose one from history" width="1286" height="1752" loading="lazy" decoding="async"></a></div>
+              <div><h4>Select a card before payment</h4><a class="flower-diagram-link" href="assets/images/card-selection.png"><img src="assets/images/card-selection.png" alt="Card selection dialog with greeting, size, templates, uploaded images and a Complete button" width="2566" height="3022" loading="lazy" decoding="async"></a></div>
+              <div><h4>Checkout with a selected card</h4><a class="flower-diagram-link" href="assets/images/card-checkout-selected.png"><img src="assets/images/card-checkout-selected.png" alt="Checkout showing the selected card preview, card price and updated order total" width="2560" height="3922" loading="lazy" decoding="async"></a></div>
+            </div>
+            </figure>
+        </section>
+      </div>
+    </section>
+
+    </div>
+    </div>
+  </main>
+
+  <dialog id="diagram-viewer" class="diagram-viewer" aria-label="Process diagram">
+    <div class="diagram-viewer-toolbar">
+      <button type="button" data-diagram-zoom aria-pressed="false">Original size</button>
+      <button type="button" data-diagram-close autofocus>Close image</button>
+    </div>
+    <div class="diagram-viewer-content"><img alt=""></div>
+  </dialog>
+
+</body>
+
+</html>

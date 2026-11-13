@@ -1,0 +1,15 @@
+{
+  "name": "hoatheomua-ba-case-study",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "test:typography": "node scripts/check-typography.cjs",
+    "test:contents": "node scripts/check-contents.cjs"
+  },
+  "devDependencies": {
+    "@fontsource-variable/noto-sans": "^5.3.0",
+    "@fontsource-variable/noto-serif": "^5.3.0",
+    "linkedom": "^0.18.14",
+    "playwright": "^1.64.1"
+  }
+}

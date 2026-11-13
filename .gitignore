@@ -1,0 +1,4 @@
+.edge-*/
+*-preview*.png
+node_modules/
+.qa/
